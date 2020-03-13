@@ -101,7 +101,6 @@ length_sub = length(subject_text)  #키워드 포함 데이터 수
 length_sub/length_text  #키워드 포함 데이터 비율
 
 #(3)subject_text의 LDA 혼잡도 비교
-
 only_noun2 = c()  #subject_text로 새로운 Topic Modeling 생성
 l2 = 1
 for(i in 1:10){
@@ -139,10 +138,6 @@ perplexity(my_lda10)  #혼잡도 출력
 #3. 분석 프로세스
 
 #(1)데이터 전처리
-#① 수집
-#② 통합
-#③ 청소
-
 #올림픽
 setwd("D:/Twitter_201402/")
 filepath = "20140224.txt"
@@ -196,8 +191,6 @@ wordcount_top <-head(sort(wordcount, decreasing = T),100)
 color <- brewer.pal(12, "Set3")
 wordcloud(names(wordcount_top), wordcount_top, rot.per=0.35, min.freq = 3000, 
 scale=c(5.8,0.3), random.order = FALSE, random.color = TRUE, colors = color)
-
-#④ 변형
 
 #(2)행사별 관심 분석
 #날짜별 length(subject_text)/length(only_text)를 추출한 데이터셋 이용
