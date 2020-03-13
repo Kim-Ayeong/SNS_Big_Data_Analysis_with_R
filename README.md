@@ -21,4 +21,4 @@
   - 14주 차 - 단어 벡터화
   - 15주 차 - 자동 요약
 
-- Final Project : 2013-14년도 Twitter 데이터를 활용한 '스포츠 경기 후 Twitter user 여론 분석'
+- Final Project : 2013-14년도 Twitter 데이터를 활용한 '스포츠 경기 후 Twitter 여론 분석'
